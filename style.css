@@ -1,0 +1,211 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #bdf3c4;
+}
+
+#projects {
+  background-color: #bdf3c4;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.jumbotron img {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s;
+}
+.display-4 {
+  font-family: monospace;
+}
+
+.lead {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.dance {
+  background-image: url('https://www.google.com/logos/2012/halloweenmonsters/halloweenmonsters-hp-skeleton.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  animation: lovelydance 0.85s steps(1) infinite;
+}
+
+@keyframes lovelydance {
+  0% {
+    background-position: 12px -233px;
+  }
+  10% {
+    background-position: 0 -311px;
+  }
+  20% {
+    background-position: 12px -467px;
+  }
+  30% {
+    background-position: 7px -542px;
+  }
+  40% {
+    background-position: 5px -622px;
+  }
+  50% {
+    background-position: 18px -700px;
+  }
+  60% {
+    background-position: 12px -775px;
+  }
+  70% {
+    background-position: 26px -854px;
+  }
+  80% {
+    background-position: 14px -921px;
+  }
+  90% {
+    background-position: 14px -1000px;
+  }
+  100% {
+    background-position: 10px -1080px;
+  }
+}
+
+:root {
+  --number-of-characters: 21;
+}
+
+.display-4 {
+  position: relative;
+  display: inline-block;
+}
+
+.display-4::before,
+.display-4 ::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.display-4::before {
+  background-color: #bdf3c4;
+  opacity: 1;
+  -webkit-animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards;
+  animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards;
+}
+.display-4::after {
+  width: 3px;
+  background: black;
+  -webkit-animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+  animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background: black;
+  }
+  49% {
+    background: black;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  0% {
+    background: black;
+  }
+  49% {
+    background: black;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+:root {
+  --number-of-characters: 21;
+}
+
+.lead {
+  position: relative;
+  display: inline-block;
+}
+
+.lead::before,
+.lead ::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.lead::before {
+  background-color: #bdf3c4;
+  opacity: 1;
+  -webkit-animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards;
+  animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards;
+}
+.lead::after {
+  width: 3px;
+  background: black;
+  -webkit-animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+  animation: typewriter 4s steps(var(--number-of-characters)) 2s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background: black;
+  }
+  49% {
+    background: black;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  0% {
+    background: black;
+  }
+  49% {
+    background: black;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
